@@ -20,7 +20,7 @@ export default class Login extends PureComponent<Props, State> {
 
   render() {
     return (
-      <View>
+      <View style={LoginStyle.view}>
         <Text>SendMe App</Text>
         <TextInput
           style={LoginStyle.username}

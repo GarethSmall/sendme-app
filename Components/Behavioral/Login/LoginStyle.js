@@ -1,7 +1,9 @@
 import { StyleSheet } from 'react-native';
+import AppTheme from '../../../AppTheme/SendMe2017';
+
 export default LoginStyle = StyleSheet.create({
   view : {
-    background: 'blue',
+    backgroundColor: AppTheme.primaryColor,
   },
   username : {
     height: 40,
