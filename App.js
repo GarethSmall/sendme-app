@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import Login from './React/Components/Behavioral/Login';
+import Login from './React/Components/Pages/Login';
 import { Font } from 'expo';
 
 export default class App extends PureComponent {

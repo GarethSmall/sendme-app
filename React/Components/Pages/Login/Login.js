@@ -3,7 +3,8 @@ import React, { PureComponent } from 'React';
 import { View } from 'react-native';
 import LoginStyle from './LoginStyle';
 import Header1 from '../../Display/Header1/index';
-import TextInput from '../../Display/TextInput/TextInput';
+import TextInput from '../../Display/TextInput/index';
+import Button from '../../Display/Button/index';
 
 type Props = {};
 type State = {
@@ -24,6 +25,8 @@ export default class Login extends PureComponent<Props, State> {
     this.setState({ password });
   };
 
+  onLogin = () => { console.log(1) };
+
   render() {
     return (
       <View style={LoginStyle.view}>
@@ -41,6 +44,11 @@ export default class Login extends PureComponent<Props, State> {
             value={this.state.password}
             secureTextEntry
             placeholder="Password"
+          />
+          <Button
+            onPress={this.onLogin}
+            title="Login"
+            accessibilityLabel="Login"
           />
         </View>
       </View>
