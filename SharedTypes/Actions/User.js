@@ -1,4 +1,5 @@
 // @flow
+
 export type UserLoginSuccess = {
   type : string,
 }

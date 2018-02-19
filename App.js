@@ -1,7 +1,11 @@
 import React, { PureComponent } from 'react';
 import Login from './React/Components/Pages/Login';
 import { Font } from 'expo';
+import User from './Redux/Reducers/User';
+import { combineReducers, createStore } from 'redux';
+import { Provider } from 'react-redux';
 
+const store = createStore(combineReducers({ User }));
 export default class App extends PureComponent {
   async componentDidMount() {
     await Font.loadAsync({
@@ -10,6 +14,10 @@ export default class App extends PureComponent {
     this.setState({ fontLoaded: true });
   }
   render() {
-    return (<Login />);
+    return (
+      <Provider store={store}>
+        <Login />
+      </Provider>
+    );
   }
 }
