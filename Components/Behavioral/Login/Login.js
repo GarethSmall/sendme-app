@@ -1,7 +1,8 @@
 // @flow
 import React, { PureComponent } from 'react';
-import { Text, TextInput, View } from 'react-native';
+import { TextInput, View } from 'react-native';
 import LoginStyle from './LoginStyle';
+import Header1 from '../../Display/Header1/index';
 
 type Props = {};
 type State = {
@@ -21,7 +22,7 @@ export default class Login extends PureComponent<Props, State> {
   render() {
     return (
       <View style={LoginStyle.view}>
-        <Text>SendMe App</Text>
+        <Header1>SendMe App</Header1>
         <TextInput
           style={LoginStyle.username}
           onChangeText={this.onChangeUsername}

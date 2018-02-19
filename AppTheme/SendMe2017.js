@@ -8,6 +8,12 @@ const SendMe2017 : Theme = {
   smallSize: 4,
   mediumSize: 9,
   largeSize: 20,
+  fontFamily: 'Roboto',
+  fontSize: 16,
+  header1: 36,
+  header2: 26,
+  header3: 22,
+  header4: 18,
 };
 
 export default SendMe2017;
