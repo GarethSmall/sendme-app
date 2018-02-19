@@ -1,6 +1,5 @@
 package host.exp.exponent;
 
-
 import com.facebook.react.ReactPackage;
 
 import java.util.Arrays;

@@ -1,5 +1,5 @@
 // @flow
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from 'React';
 import { Text } from 'react-native';
 import HeaderStyle from './HeaderStyle';
 

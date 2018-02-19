@@ -42,6 +42,8 @@
 		81F2B9A031D547118417898B /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD6451394724F5992A5AF2A /* Octicons.ttf */; };
 		C148A791F4154D1498885331 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57C6B54CEA8D4520B7455A5A /* SimpleLineIcons.ttf */; };
 		06322DADBCA84EC39BF312F3 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A46D396E99C4A3EA8CE1F92 /* Zocial.ttf */; };
+		FFD9FFD579064163B09D1F65 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB52FDC1B0B24DFAA553DBC9 /* FontAwesome.ttf */; };
+		623A9763A8BD4E1D8F7D6CDC /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ABACB1A6A240F3A27CA1F0 /* libRNVectorIcons.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,9 @@
 		FFD6451394724F5992A5AF2A /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		57C6B54CEA8D4520B7455A5A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		6A46D396E99C4A3EA8CE1F92 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BB52FDC1B0B24DFAA553DBC9 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-fa-icons/fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A20C605150DA492BAA542DB7 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; name = "RNVectorIcons.xcodeproj"; path = "../node_modules/@expo/vector-icons/vendor/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		99ABACB1A6A240F3A27CA1F0 /* libRNVectorIcons.a */ = {isa = PBXFileReference; name = "libRNVectorIcons.a"; path = "libRNVectorIcons.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB8117C1BFA0514F79CAF74 /* libPods-sendme.a in Frameworks */,
+				623A9763A8BD4E1D8F7D6CDC /* libRNVectorIcons.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +131,7 @@
 				5B29BC350A332C58878A9F13 /* Pods */,
 				1A42804E64B7E9E0AB8B6799 /* Frameworks */,
 				CF6B1C7359A84488A4F82064 /* Resources */,
+				72098AFFFA444A6D9E57F8B7 /* Libraries */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,8 +198,18 @@
 				FFD6451394724F5992A5AF2A /* Octicons.ttf */,
 				57C6B54CEA8D4520B7455A5A /* SimpleLineIcons.ttf */,
 				6A46D396E99C4A3EA8CE1F92 /* Zocial.ttf */,
+				BB52FDC1B0B24DFAA553DBC9 /* FontAwesome.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+		72098AFFFA444A6D9E57F8B7 /* Libraries */ = {
+			isa = "PBXGroup";
+			children = (
+				A20C605150DA492BAA542DB7 /* RNVectorIcons.xcodeproj */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 			path = "";
 		};
@@ -292,6 +309,7 @@
 				81F2B9A031D547118417898B /* Octicons.ttf in Resources */,
 				C148A791F4154D1498885331 /* SimpleLineIcons.ttf in Resources */,
 				06322DADBCA84EC39BF312F3 /* Zocial.ttf in Resources */,
+				FFD9FFD579064163B09D1F65 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +503,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SendMeApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -499,6 +521,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SendMeApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};

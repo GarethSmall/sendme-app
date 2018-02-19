@@ -1,5 +1,5 @@
 // @flow
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from 'React';
 import TextInputStyle from './TextInputStyle';
 import ReactNative from 'react-native';
 

@@ -19,10 +19,12 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo/vector-icons": "github:expo/vector-icons",
     "expo": "^25.0.0",
     "flow-bin": "^0.66.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
+    "react-redux": "^5.0.7",
     "react-router": "^4.2.0"
   }
 }

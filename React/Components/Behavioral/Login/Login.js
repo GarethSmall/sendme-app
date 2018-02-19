@@ -1,5 +1,5 @@
 // @flow
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from 'React';
 import { View } from 'react-native';
 import LoginStyle from './LoginStyle';
 import Header1 from '../../Display/Header1/index';
