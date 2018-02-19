@@ -14,6 +14,7 @@ export default function(state : UserState = initialState, action : UserAction) :
       return {
         ...state,
         isLoggedIn: true,
+        loginError: null,
       }
     }
     case ReducerType.USER.LOGIN_ERROR: {

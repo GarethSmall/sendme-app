@@ -20,7 +20,7 @@ type FieldProps = {
 const mapActionsToProps = (dispatch) : ActionProps => ({ actions: bindActionCreators(actionsToBind, dispatch) });
 
 const mapStateToProps = (state : Store) : FieldProps => ({
-  errorMessage: state.User.loginError,
+  loginError: state.User.loginError,
 });
 
 type Props = ActionProps;
