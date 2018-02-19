@@ -1,6 +1,9 @@
-//@flow
-export type Theme = $ReadOnly<{|
-  primaryColor : String,
-  secondaryColor : String,
-  whiteColor : String,
-|}>
+// @flow
+export type Theme = {|
+  +primaryColor : String,
+  +secondaryColor : String,
+  +whiteColor : String,
+  +smallSize : number,
+  +mediumSize : number,
+  +largeSize : number,
+|}
