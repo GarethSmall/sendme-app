@@ -9,6 +9,9 @@ export function login({ username : string, password : string }) {
   } else {
     return {
       type: ReducerType.USER.LOGIN_ERROR,
+      response: {
+        message: 'Inccorect Username/Password',
+      },
     }
   }
 }
