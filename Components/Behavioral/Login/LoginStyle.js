@@ -7,14 +7,8 @@ export default LoginStyle = StyleSheet.create({
     backgroundColor: AppTheme.primaryColor,
     alignItems: 'center',
     justifyContent: 'center',
-    flexDirection: 'column',
     flex: 1,
+    width: '100%',
     padding: AppTheme.largeSize,
-  },
-  username : {
-    height: 40,
-    alignSelf: 'stretch',
-    borderColor: 'gray',
-    borderWidth: 1,
   },
 });
