@@ -22,7 +22,7 @@ export default class Login extends PureComponent<Props, State> {
   render() {
     return (
       <View style={LoginStyle.view}>
-        <Header1>SendMe App</Header1>
+        <Header1 style={{ fontSize: 50 }}>SendMe</Header1>
         <TextInput
           style={LoginStyle.username}
           onChangeText={this.onChangeUsername}
