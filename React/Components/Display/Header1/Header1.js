@@ -1,10 +1,10 @@
 // @flow
-import React, { PureComponent } from "react";
-import { Text } from "react-native";
-import HeaderStyle from "./HeaderStyle";
+import React, { PureComponent } from 'react';
+import { Text } from 'react-native';
+import HeaderStyle from './HeaderStyle';
 
 type Props = {
-  style? : Object
+  style? : Object,
 };
 
 export default class Header1 extends PureComponent<Props> {

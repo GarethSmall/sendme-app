@@ -13,5 +13,5 @@ export type Theme = {|
   +header3 : Number,
   +header4 : Number,
   +header5 : Number,
-  +header6 : Number
+  +header6 : Number,
 |};
