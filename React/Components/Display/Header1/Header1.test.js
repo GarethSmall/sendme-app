@@ -11,9 +11,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('Header1 ', () => {
   test('should render', () => {
-    const component = shallow((
-      <Header1 />
-    ));
+    const component = shallow(<Header1 />);
     const tree = toJson(component);
     expect(tree).toMatchSnapshot();
   });

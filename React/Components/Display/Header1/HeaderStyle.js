@@ -2,7 +2,7 @@
 import { StyleSheet } from 'react-native';
 import AppTheme from '../../../AppTheme/AppTheme';
 
- const HeaderStyle = StyleSheet.create({
+const HeaderStyle = StyleSheet.create({
   header: {
     fontFamily: AppTheme.fontFamily,
     fontWeight: 'bold',
@@ -12,4 +12,4 @@ import AppTheme from '../../../AppTheme/AppTheme';
   },
 });
 
- export default HeaderStyle;
+export default HeaderStyle;

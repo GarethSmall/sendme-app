@@ -11,9 +11,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('TextInput ', () => {
   test('should render', () => {
-    const component = shallow((
-      <TextInput />
-    ));
+    const component = shallow(<TextInput />);
     const tree = toJson(component);
     expect(tree).toMatchSnapshot();
   });

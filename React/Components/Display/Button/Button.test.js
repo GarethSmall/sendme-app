@@ -11,9 +11,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('Button ', () => {
   test('should render', () => {
-    const component = shallow((
-      <Button title="Test Button" onPress={() => {}} />
-    ));
+    const component = shallow(<Button title="Test Button" onPress={() => {}} />);
     const tree = toJson(component);
     expect(tree).toMatchSnapshot();
   });

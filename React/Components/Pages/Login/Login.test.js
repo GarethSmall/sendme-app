@@ -13,17 +13,15 @@ import configureStore from 'redux-mock-store';
 const mockStore = configureStore([]);
 const initialState = {
   User: {
-    userInitialState
-  }
+    userInitialState,
+  },
 };
 
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('Login ', () => {
   test('should render', () => {
-    const component = shallow((
-      <Login  />
-    ), { context: { store: mockStore(initialState) } });
+    const component = shallow(<Login />, { context: { store: mockStore(initialState) } });
     const tree = toJson(component);
     expect(tree).toMatchSnapshot();
   });
