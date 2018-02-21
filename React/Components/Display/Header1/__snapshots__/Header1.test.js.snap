@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header1 should render 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#fff",
+        "fontFamily": "Roboto",
+        "fontSize": 36,
+        "fontWeight": "bold",
+        "padding": 20,
+      },
+      undefined,
+    ]
+  }
+/>
+`;

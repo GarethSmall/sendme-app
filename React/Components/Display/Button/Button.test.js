@@ -1,13 +1,14 @@
 // @flow
 import React from 'react';
-import TextInput from './';
+import Button from './';
 import renderer from 'react-test-renderer';
 
-describe('TextInput ', () => {
+describe('Button', () => {
   test('should render', () => {
     const tree = renderer.create(
-      <TextInput  />
+      <Button title="Test Button"  />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
+

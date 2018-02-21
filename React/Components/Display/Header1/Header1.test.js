@@ -1,13 +1,14 @@
 // @flow
 import React from 'react';
-import TextInput from './';
+import Header1 from './';
 import renderer from 'react-test-renderer';
 
-describe('TextInput ', () => {
+describe('Header1', () => {
   test('should render', () => {
     const tree = renderer.create(
-      <TextInput  />
+      <Header1  />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
+
