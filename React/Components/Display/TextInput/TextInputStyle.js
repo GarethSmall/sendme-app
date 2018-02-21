@@ -2,7 +2,7 @@
 import { StyleSheet } from 'react-native';
 import AppTheme from '../../../AppTheme/AppTheme';
 
-export default (TextInputStyle = StyleSheet.create({
+const TextInputStyle = StyleSheet.create({
   input: {
     height: 45,
     alignSelf: 'stretch',
@@ -11,4 +11,6 @@ export default (TextInputStyle = StyleSheet.create({
     backgroundColor: AppTheme.whiteColor,
     borderRadius: AppTheme.smallSize,
   },
-}));
+});
+
+export default TextInputStyle;

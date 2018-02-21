@@ -2,7 +2,7 @@
 import { StyleSheet } from 'react-native';
 import AppTheme from '../../../AppTheme/AppTheme';
 
-export default (LoginStyle = StyleSheet.create({
+const LoginStyle = StyleSheet.create({
   view: {
     backgroundColor: AppTheme.primaryColor,
     alignItems: 'center',
@@ -11,4 +11,6 @@ export default (LoginStyle = StyleSheet.create({
     width: '100%',
     padding: AppTheme.largeSize,
   },
-}));
+});
+
+export default LoginStyle;
