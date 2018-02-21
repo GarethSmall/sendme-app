@@ -1,2 +1,3 @@
-import TextInput from './TextInput';
+// @flow
+import TextInput from "./TextInput";
 export default TextInput;

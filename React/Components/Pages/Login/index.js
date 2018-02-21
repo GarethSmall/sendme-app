@@ -1,2 +1,3 @@
-import Login from './Login';
+// @flow
+import Login from "./Login";
 export default Login;

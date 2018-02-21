@@ -1,12 +1,12 @@
 // @flow
 
 export type UserLoginSuccess = {
-  type : string,
+  type : String,
 }
 export type UserLoginError = {
-  type : string,
+  type : String,
   response : {
-    message : string,
+    message : String,
   }
 }
 

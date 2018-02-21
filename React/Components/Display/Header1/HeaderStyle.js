@@ -1,12 +1,13 @@
-import { StyleSheet } from 'react-native';
-import AppTheme from '../../../AppTheme/AppTheme';
+// @flow
+import { StyleSheet } from "react-native";
+import AppTheme from "../../../AppTheme/AppTheme";
 
-export default HeaderStyle = StyleSheet.create({
+export default (HeaderStyle = StyleSheet.create({
   header: {
     fontFamily: AppTheme.fontFamily,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: AppTheme.header1,
     color: AppTheme.whiteColor,
-    padding: AppTheme.largeSize,
-  },
-});
+    padding: AppTheme.largeSize
+  }
+}));
