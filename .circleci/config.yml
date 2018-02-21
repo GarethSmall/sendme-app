@@ -3,8 +3,8 @@ jobs:
   build:
      docker:
          - image: node:9.5.0
-       environment:
-         - NODE_ENV: development
+     environment:
+       - NODE_ENV: development
     steps:
       - checkout
       - run:
