@@ -1,16 +1,10 @@
 version: 2
 jobs:
   build:
-     docker:
-       - image: node:9.5.0
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
-      - run:
-          name: Install
-          command: npm i
-      - run:
-          name: Lint
-          command: npm run lint
-      - run:
-          name: Test
-          command: npm test
+      - run: npm install
+      - run: npm run lint
+      - run: npm test
