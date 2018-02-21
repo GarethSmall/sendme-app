@@ -1,13 +1,20 @@
 // @flow
 import React from 'react';
+import toJson from 'enzyme-to-json';
+import Adapter from 'enzyme-adapter-react-16';
+import Enzyme from 'enzyme';
+import shallow from 'enzyme/shallow';
 import TextInput from './';
-import renderer from 'react-test-renderer';
+const { describe, test, expect } = global;
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('TextInput ', () => {
   test('should render', () => {
-    const tree = renderer.create(
-      <TextInput  />
-    ).toJSON();
+    const component = shallow((
+      <TextInput />
+    ));
+    const tree = toJson(component);
     expect(tree).toMatchSnapshot();
   });
 });

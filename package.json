@@ -8,6 +8,9 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react-native": "^3.0.2",
     "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
     "eslint": "^4.18.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -27,6 +30,7 @@
     "react-native-mock": "^0.3.1",
     "react-native-scripts": "1.11.1",
     "react-test-renderer": "16.2.0",
+    "redux-mock-store": "^1.5.1",
     "sinon": "^4.3.0"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -48,7 +52,8 @@
     "collectCoverageFrom": [
       "**/React/**.js",
       "**/Redux/**.js"
-    ]
+    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   },
   "dependencies": {
     "@expo/vector-icons": "github:expo/vector-icons",
