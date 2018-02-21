@@ -1,13 +1,15 @@
 version: 2
-machine:
-  node:
-    version: 9.5.0
 jobs:
   build:
-    docker:
-      - image: debian:stretch
+     docker:
+         - image: node:9.5.0
+       environment:
+         - NODE_ENV: development
     steps:
       - checkout
+      - run:
+          name: Install
+          command: npm i
       - run:
           name: Lint
           command: npm run lint
