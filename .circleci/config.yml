@@ -1,4 +1,7 @@
 version: 2
+machine:
+  node:
+    version: 9.5.0
 jobs:
   build:
     docker:
@@ -6,8 +9,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Lint
+          command: npm run lint
       - run:
-          name: Print the Current Time
-          command: date
+          name: Test
+          command: npm test
