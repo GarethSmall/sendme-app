@@ -49,7 +49,7 @@
   },
   "jest": {
     "preset": "react-native",
-    "collectCoverage": true,
+    "collectCoverage": false,
     "collectCoverageFrom": [
       "**/React/**.js",
       "**/Redux/**.js"
