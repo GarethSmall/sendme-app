@@ -1,7 +1,7 @@
 // @flow
 import user, { initialState } from './User';
 import { Reducer } from 'redux-testkit';
-import { ActionType } from '../../SharedTypes/ActionType';
+import ActionType from '../../SharedTypes/ActionType';
 
 describe('User Reducer', () => {
   test('should have initial state', () => {

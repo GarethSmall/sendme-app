@@ -1,7 +1,7 @@
 // @flow
 import type { UserState } from '../../SharedTypes/Reducer/User';
 import type { UserAction, UserLoginError } from '../../SharedTypes/Actions/User';
-import { ActionType } from '../../SharedTypes/ActionType';
+import ActionType from '../../SharedTypes/ActionType';
 
 export const initialState: UserState = {
   isLoggedIn: false,

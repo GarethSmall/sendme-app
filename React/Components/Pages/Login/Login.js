@@ -26,8 +26,8 @@ const mapStateToProps = (state : Store) : FieldProps => ({
 type Props = ActionProps;
 
 type State = {
-  username : String,
-  password : String,
+  username : string,
+  password : string,
 };
 
 @connect(mapStateToProps, mapActionsToProps)
@@ -37,18 +37,18 @@ export default class Login extends PureComponent<Props, State> {
     password: '',
   };
 
-  onChangeUsername = (username : String) => {
+  onChangeUsername = (username : string) => {
     this.setState({ username });
   };
 
-  onChangePassword = (password : String) => {
+  onChangePassword = (password : string) => {
     this.setState({ password });
   };
 
   onLogin = () => {
     const { actions: { login } } = this.props;
     const { username, password } = this.state;
-    login({ username, password });
+    login(username, password);
   };
 
   render() {
