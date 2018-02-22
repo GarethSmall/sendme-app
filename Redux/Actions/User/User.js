@@ -1,15 +1,15 @@
 // @flow
 
-import { ReducerType } from '../../../SharedTypes/ReducerType';
+import ActionType from '../../../SharedTypes/ActionType';
 
-export function login({ username, password } : { username : String, password : String }) {
+export function login(username : string, password : string) {
   if (username === 'G' && password === '1') {
     return {
-      type: ReducerType.USER.LOGIN_SUCCESS,
+      type: ActionType.USER.LOGIN_SUCCESS,
     };
   } else {
     return {
-      type: ReducerType.USER.LOGIN_ERROR,
+      type: ActionType.USER.LOGIN_ERROR,
       response: {
         message: 'Inccorect Username/Password',
       },
