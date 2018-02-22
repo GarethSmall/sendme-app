@@ -1,7 +1,5 @@
 // @flow
-import React from 'react';
-import { initialState } from './User';
-import user from './User';
+import user, { initialState } from './User';
 import { Reducer } from 'redux-testkit';
 import { ActionType } from '../../SharedTypes/ActionType';
 

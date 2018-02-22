@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1519262550909" clover="3.2.0">
-  <project timestamp="1519262550909" name="All files">
+<coverage generated="1519262762518" clover="3.2.0">
+  <project timestamp="1519262762518" name="All files">
     <metrics statements="62" coveredstatements="6" conditionals="14" coveredconditionals="7" methods="4" coveredmethods="1" elements="80" coveredelements="14" complexity="0" loc="62" ncloc="62" packages="7" files="15" classes="15">
       <package name="React.AppTheme">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
