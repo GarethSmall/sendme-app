@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/6</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">87.5% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>7/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/1</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/6</span>
+        <span class='fraction'>6/6</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -79,60 +79,60 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// @flow
 import type { UserState } from '../../SharedTypes/Reducer/User';
 import type { UserAction, UserLoginError } from '../../SharedTypes/Actions/User';
-import { ReducerType } from '../../SharedTypes/ReducerType';
+import { ActionType } from '../../SharedTypes/ActionType';
 &nbsp;
 export const initialState: UserState = {
   isLoggedIn: false,
   loginError: null,
 };
 &nbsp;
-export default <span class="fstat-no" title="function not covered" >fu</span>nction(state : UserState = <span class="branch-0 cbranch-no" title="branch not covered" >initialState,</span> action : UserAction) : UserState {
-<span class="cstat-no" title="statement not covered" >  switch (action.type) {</span>
-    case ReducerType.USER.LOGIN_SUCCESS: {
-<span class="cstat-no" title="statement not covered" >      return {</span>
+export default function(state : UserState = initialState, action : UserAction) : UserState {
+  switch (action != null &amp;&amp; action.type) {
+    case ActionType.USER.LOGIN_SUCCESS: {
+      return {
         ...state,
         isLoggedIn: true,
         loginError: null,
       };
     }
-    case ReducerType.USER.LOGIN_ERROR: {
-      const a = (<span class="cstat-no" title="statement not covered" >(action : any) : UserLoginError)</span>;
-<span class="cstat-no" title="statement not covered" >      return {</span>
+    case ActionType.USER.LOGIN_ERROR: {
+      const a = ((action : any) : UserLoginError);
+      return {
         ...state,
         loginError: a.response.message,
       };
     }
     default: {
-<span class="cstat-no" title="statement not covered" >      return state || initialState;</span>
+      return state || <span class="branch-1 cbranch-no" title="branch not covered" >initialState;</span>
     }
   }
 }
@@ -142,7 +142,7 @@ export default <span class="fstat-no" title="function not covered" >fu</span>nct
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 20 2018 20:30:04 GMT-0600 (CST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 21 2018 19:21:25 GMT-0600 (CST)
 </div>
 </div>
 <script src="../../prettify.js"></script>
