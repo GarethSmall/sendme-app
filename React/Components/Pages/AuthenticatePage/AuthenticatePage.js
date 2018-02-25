@@ -1,26 +1,17 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { login } from '../../../../Redux/Actions/User/User';
-import { bindActionCreators } from 'redux';
 import type { Store } from '../../../../SharedTypes/Store';
 import Login from '../Login/Login';
 
-const actionsToBind = { login };
-type ActionProps = { actions : typeof actionsToBind };
-
-type FieldProps = {
+type Props = {
   +isLoggedIn : boolean,
 };
 
-const mapActionsToProps = (dispatch) : ActionProps => ({ actions: bindActionCreators(actionsToBind, dispatch) });
-
-const mapStateToProps = (state : Store) : FieldProps => ({
+const mapStateToProps = (state : Store) : Props => ({
   isLoggedIn: state.User.isLoggedIn,
 });
 
-type Props = ActionProps;
-
-@connect(mapStateToProps, mapActionsToProps)
+@connect(mapStateToProps)
 export default class AuthenticatePage extends PureComponent<Props> {
 
   render() {
