@@ -13,13 +13,8 @@ const mapStateToProps = (state : Store) : Props => ({
 
 @connect(mapStateToProps)
 export default class AuthenticatePage extends PureComponent<Props> {
-
   render() {
     const { isLoggedIn } = this.props;
-    return isLoggedIn ? (
-      <h1>Yahoo you're logged in!</h1>
-    ) : (
-      <Login />
-    );
+    return isLoggedIn ? <h1>Yahoo you're logged in!</h1> : <Login />;
   }
 }
