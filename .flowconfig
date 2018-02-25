@@ -1,6 +1,14 @@
 [ignore]
 ; We fork some components by platform
 .*/*[.]android.js
+<PROJECT_ROOT>/.circleci/.*
+<PROJECT_ROOT>/.expo/.*
+<PROJECT_ROOT>/.expo-source/.*
+<PROJECT_ROOT>/android/.*
+<PROJECT_ROOT>/ios/.*
+<PROJECT_ROOT>/coverage/.*
+<PROJECT_ROOT>/node_modules/.*
+
 
 ; Ignore templates for 'react-native init'
 <PROJECT_ROOT>/node_modules/react-native/local-cli/templates/.*
