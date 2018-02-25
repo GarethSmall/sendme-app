@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
-import Login from './React/Components/Pages/Login';
 import { Font } from 'expo';
 import User from './Redux/Reducers/User';
 import { combineReducers, createStore } from 'redux';
 import { Provider } from 'react-redux';
+import AuthenticatePage from './React/Components/Pages/AuthenticatePage/AuthenticatePage';
 
 const store = createStore(combineReducers({ User }));
 export default class App extends PureComponent {
@@ -16,7 +16,7 @@ export default class App extends PureComponent {
   render() {
     return (
       <Provider store={store}>
-        <Login />
+        <AuthenticatePage />
       </Provider>
     );
   }
