@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthenticatePage should render logged in 1`] = `
+<AuthenticatePage
+  actions={
+    Object {
+      "login": [Function],
+    }
+  }
+  isLoggedIn={true}
+/>
+`;
+
+exports[`AuthenticatePage should render logged out 1`] = `
+<AuthenticatePage
+  actions={
+    Object {
+      "login": [Function],
+    }
+  }
+/>
+`;
